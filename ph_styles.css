@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* In this code I added font families that set font for certain titles. The url set what kind of font is used. */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff');
+    src: url('cac_champagne.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: Grunge;
+    src: url('1942.woff') format('woff');
+    src: url('1942.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff');
+    src: url('DobkinPlain.ttf') format('TrueType');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Anthony Arias
+   Date:   9/6/18
+   
+   Filename: ph_styles.css
+
+*/
+/* Structural Styles */
+/* In this set of code I set the body background color to a greyish kind of color by having a specific hue, ligthing and saturation.  */
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+/* In this set of code I set the body background color to a greyish kind of color by having a specific hue, ligthing and saturation. The font family sets the font type of the body in the rendered page. */
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+/* This set of code set the background color of the header to black. */
+header {
+    background-color: black
+}
+
+/* This set of code sets the margin of the rendered page to 0 pixels. The padding is set to 5 pixels on top and 25 pixels on the right, bottom, and left. */
+p {
+    margin: 0px;
+    padding: 5px 25px 25px 25px;
+}
+
+/* In this set of code the paragraph element is a driect child of the body element. The style rule font-size sets the size of the paragraphs. The text align style rule makes the body paragraphs aligned where you want it. */
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* This set of code sets the style and sizes of my fonts. In here it also aligns the text to the center. */
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Navigation Styles */
+/* This set of code set the navigation links on the rendered page a certain font and it sets the padding on it. */
+nav a {
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* This set of code sets the navigation hyperlinks to a certain color and background color. The text-ddecoration element takes away the underline of the hyperlinks. */
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+/* This set of code setsn the navigation hyperlinks to a certain color and also gives it a certain backgorund color as well. */
+nav>ul>li>a:active,
+nav>ul>li>a:hover {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsl(0, 0%, 42%, 0.7);
+}
+
+/* Section Styles */
+/*This set of code sets the h1 to a certain font size, font weight and changes the padding.*/
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    padding: 20px 0px 10px 20px;
+}
+
+/* This set of code styles a certain section to the rendered page. The #play1 - #play4 is the different sections on the rendered page, it also sets the background color to all the specific headings. */
+section#play1 {
+    background-color: hsl(240, 100%, 88%);
+}
+
+section#play2 {
+    background-color: hsl(25, 88%, 73%);
+}
+
+section#play3 {
+    background-color: hsl(0, 100%, 75%);
+}
+
+section#play4 {
+    background-color: hsl(296, 86%, 86%);
+}
+
+/* This set of code sets the font types to tthe certain */
+section#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+section#play2 h1 {
+    font-family: Grunge, ‘Times New Roman’, Times, serif;
+}
+
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
+/* Description List Styles */
+dl>dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+dl>dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
